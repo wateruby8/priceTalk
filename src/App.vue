@@ -1,9 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init()
 </script>
 
 <template>
-  <nav>
+  <nav class="delnav pb-10">
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/login">Login</RouterLink>
     <RouterLink to="/register">Register</RouterLink>
@@ -13,43 +16,39 @@ import { RouterLink, RouterView } from 'vue-router'
     <RouterLink to="/addInvoice">AddInvoice</RouterLink>
     <RouterLink to="/service">Service</RouterLink>
   </nav>
-  
-  <header></header>
+
+  <header class="text-white">header</header>
 
   <RouterView />
+
+  <footer class="text-white">footer</footer>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-nav {
+.delnav {
   width: 100%;
-  font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  line-height: 2;
+}
+.delnav a:hover {
+  background-color: blue;
+}
+.delnav a.router-link-exact-active {
+  color: yellow;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.delnav a.router-link-exact-active:hover {
+  background-color: blue;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
+.delnav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  border-left: 1px solid white;
+  color: white;
 }
 
-nav a:first-of-type {
+.delnav a:first-of-type {
   border: 0;
-}
-
-@media (min-width: 1024px) {
 }
 </style>

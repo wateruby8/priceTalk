@@ -1,6 +1,22 @@
 @import './base.css';
 @import "tailwindcss";
+/* @plugin "daisyui"; */
 
+@theme {
+  --breakpoint-*:initial;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+    
+  --color-primary:#FF6A41;
+  --color-black-20:#12121233;
+  --color-black-50:#12121280;
+  --color-black-100:#121212FF;
+  --color-white-20:#FFFFFF33;
+  --color-white-50:#FFFFFF80;
+  --color-white-100:#FFFFFFFF;
+
+}
 
 #app {
   max-width: 1280px;
@@ -9,24 +25,7 @@
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-  
+a{
+  text-decoration: none;  
+  transition: 0.4s; 
 }

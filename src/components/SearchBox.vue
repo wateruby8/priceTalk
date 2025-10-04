@@ -1,13 +1,10 @@
 <template>
-  <h2>這是首頁-index第一區-搜尋</h2>
-
+  <h2 class="text-white-100">這是首頁-index第一區-搜尋</h2>
 </template>
 
 <style scoped>
-
 </style>
 
 
 <script setup>
-
 </script>
