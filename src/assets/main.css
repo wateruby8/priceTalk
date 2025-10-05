@@ -1,31 +1,99 @@
 @import './base.css';
-@import "tailwindcss";
-/* @plugin "daisyui"; */
+@import 'tailwindcss';
+@plugin "daisyui";
 
 @theme {
-  --breakpoint-*:initial;
+  --breakpoint-*: initial;
   --breakpoint-sm: 480px;
   --breakpoint-md: 768px;
-  --breakpoint-lg: 976px;
-    
-  --color-primary:#FF6A41;
-  --color-black-20:#12121233;
-  --color-black-50:#12121280;
-  --color-black-100:#121212FF;
-  --color-white-20:#FFFFFF33;
-  --color-white-50:#FFFFFF80;
-  --color-white-100:#FFFFFFFF;
+  --breakpoint-lg: 1024px;
 
+  /* 使用方式
+    文字+顏色 text-primary
+    背景+顏色 bg-white-50 */
+  --color-primary: #ff6a41;
+  --color-black-20: #12121233;
+  --color-black-50: #12121280;
+  --color-black-100: #121212ff;
+  --color-white-20: #ffffff33;
+  --color-white-50: #ffffff80;
+  --color-white-100: #ffffffff;
+
+  /* 使用方式 text-display1 */
+  --text-display1: 96px;
+  --text-display1--font-weight: 700;
+  --text-display1--line-height: 1.2;
+  /* 使用方式 text-display2 */
+  --text-display2: 64px;
+  --text-display2--font-weight: 700;
+  --text-display2--line-height: 1.2;
+  /* 使用方式 text-display3 */
+  --text-display3: 48px;
+  --text-display3--font-weight: 700;
+  --text-display3--line-height: 1.2;
+  /* 使用方式 text-h1 */
+  --text-h1: 40px;
+  --text-h1--font-weight: 700;
+  --text-h1--line-height: 1.2;
+  /* 使用方式 text-h2 */
+  --text-h2: 32px;
+  --text-h2--font-weight: 700;
+  --text-h2--line-height: 1.2;
+  /* 使用方式 text-h3 */
+  --text-h3: 28px;
+  --text-h3--font-weight: 700;
+  --text-h3--line-height: 1.2;
+  /* 使用方式 text-h4 */
+  --text-h4: 24px;
+  --text-h4--font-weight: 700;
+  --text-h4--line-height: 1.2;
+  /* 使用方式 text-h5 */
+  --text-h5: 20px;
+  --text-h5--font-weight: 700;
+  --text-h5--line-height: 1.2;
+  /* 使用方式 text-h6 */
+  --text-h6: 16px;
+  --text-h6--font-weight: 700;
+  --text-h6--line-height: 1.2;
+  /* 使用方式 text-fs1 */
+  --text-fs1: 40px;
+  --text-fs1--font-weight: 350;
+  --text-fs1--line-height: 1.5;
+  /* 使用方式 text-fs2 */
+  --text-fs2: 32px;
+  --text-fs2--font-weight: 350;
+  --text-fs2--line-height: 1.5;
+  /* 使用方式 text-fs3 */
+  --text-fs3: 28px;
+  --text-fs3--font-weight: 350;
+  --text-fs3--line-height: 1.5;
+  /* 使用方式 text-fs4 */
+  --text-fs4: 24px;
+  --text-fs4--font-weight: 350;
+  --text-fs4--line-height: 1.5;
+  /* 使用方式 text-fs5 */
+  --text-fs5: 20px;
+  --text-fs5--font-weight: 350;
+  --text-fs5--line-height: 1.5;
+  /* 使用方式 text-fs6 */
+  --text-fs6: 16px;
+  --text-fs6--font-weight: 350;
+  --text-fs6--line-height: 1.5;
+  /* 使用方式 text-caption */
+  --text-caption: 14px;
+  --text-caption--font-weight: 400;
+  --text-caption--line-height: 1.5;
+  /* 使用方式 text-tiny */
+  --text-tiny: 12px;
+  --text-tiny--font-weight: 350;
+  --text-tiny--line-height: 1.5;
 }
 
 #app {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
 }
 
-a{
-  text-decoration: none;  
-  transition: 0.4s; 
+a {
+  text-decoration: none;
+  transition: 0.4s;
 }
