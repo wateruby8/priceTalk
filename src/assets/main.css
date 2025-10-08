@@ -12,6 +12,9 @@
     文字+顏色 text-primary
     背景+顏色 bg-white-50 */
   --color-primary: #ff6a41;
+  --color-primary-10: #ff6a411a;
+  --color-primary-15: #ff6a4126;
+  --color-primary-30: #ff6a414d;
   --color-black-20: #12121233;
   --color-black-50: #12121280;
   --color-black-100: #121212ff;
