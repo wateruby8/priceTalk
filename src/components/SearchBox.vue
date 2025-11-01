@@ -1,8 +1,14 @@
 <template>
   <div
-    class="bg-[url(../assets/images/searchbg.png)] bg-cover bg-center bg-no-repeat py-80 max-w-7xl m-auto"
+    class="bg-[url(../assets/images/searchbg.png)] bg-cover bg-center bg-no-repeat pt-60 lg:py-70 max-w-7xl m-auto mb-20 lg:mb-0"
   >
-    <h1 class="mb-6 text-center text-white-100 text-display2">每一筆通報，比價很可靠！</h1>
+    <h1 class="visible mb-6 text-center text-white-100 text-display3 lg:invisible">
+      每一筆通報，<br />比價很可靠！
+    </h1>
+    <h1 class="invisible lg:visible lg:mb-6 lg:text-center lg:text-white-100 lg:text-display2">
+      每一筆通報，比價很可靠！
+    </h1>
+
     <div class="flex justify-center searchBox">
       <div class="flex items-center w-3xl bg-white-100">
         <svg

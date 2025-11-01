@@ -6,7 +6,7 @@ AOS.init()
 </script>
 
 <template>
-  <nav class="delnav pb-10">
+  <!-- <nav class="pb-10 delnav">
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/login">Login</RouterLink>
     <RouterLink to="/register">Register</RouterLink>
@@ -15,64 +15,201 @@ AOS.init()
     <RouterLink to="/rank">Rank</RouterLink>
     <RouterLink to="/addInvoice">AddInvoice</RouterLink>
     <RouterLink to="/service">Service</RouterLink>
-  </nav>
+  </nav> -->
 
-  <header class="text-white">header</header>
+  <header class="flex items-center justify-between text-white">
+    <RouterLink to="/"><img src="../public/Logo.png" alt="logo" /></RouterLink>
+
+    <!-- <div class="flex items-center invisible lg:visible">
+      <button type="button" class="p-10 hover:bg-primary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-search-icon lucide-search"
+        >
+          <path d="m21 21-4.34-4.34" />
+          <circle cx="11" cy="11" r="8" />
+        </svg>
+      </button>
+
+      <button type="button" class="p-10 hover:bg-primary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-user-icon lucide-user"
+        >
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+      </button>
+      <button type="button" class="text-h6 py-12.5 px-10 hover:bg-primary">{MENU}</button>
+    </div> -->
+
+    <div class="flex items-center visible">
+      <button type="button" class="p-12 lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-search-icon lucide-search"
+        >
+          <path d="m21 21-4.34-4.34" />
+          <circle cx="11" cy="11" r="8" />
+        </svg>
+      </button>
+
+      <button type="button" class="p-12 lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-user-icon lucide-user"
+        >
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+      </button>
+
+      <button type="button" class="hidden p-12 lg:block">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-search-icon lucide-search"
+        >
+          <path d="m21 21-4.34-4.34" />
+          <circle cx="11" cy="11" r="8" />
+        </svg>
+      </button>
+
+      <button type="button" class="hidden p-12 lg:block">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-user-icon lucide-user"
+        >
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+      </button>
+
+      <button type="button" class="px-6 px-8 py-12 text-h6 lg:">{MENU}</button>
+    </div>
+  </header>
 
   <RouterView />
 
-  <footer class="bg-white-100">
-    <div class="m-auto max-w-7xl py-50 flex justify-between">
-      <div class="flex flex-col gap-y-50">
-        <img src="../public/Logo.png" alt="logo" class="w-20" />
-        <div class="flex border-1 border-black-20">
+  <footer class="p-2 bg-white-100">
+    <div class="flex flex-col justify-between py-25 lg:max-w-7xl lg:py-50 lg:flex-row lg:m-auto">
+      <div class="flex flex-row justify-between mb-15 lg:flex-col lg:gap-y-50">
+        <img src="../public/Logo.png" alt="logo" class="w-10 lg:w-20 bg-primary" />
+        <div class="flex w-1/2 border-black-20">
           <img
             src="../src/assets/images/Facebook.png"
             alt="fb"
-            class="p-2 border-r-1 border-black-20"
+            class="inline-block p-2 border-r-1 border-l-1 border-black-20 border-y-1"
           />
           <img
             src="../src/assets/images/Instagram.png"
             alt="ig"
-            class="p-2 border-r-1 border-black-20"
+            class="inline-block p-2 border-r-1 border-black-20 border-y-1"
           />
-          <img src="../src/assets/images/Line.png" alt="line" class="p-2" />
+          <img
+            src="../src/assets/images/Line.png"
+            alt="line"
+            class="inline-block p-2 border-r-1 border-black-20 border-y-1"
+          />
         </div>
       </div>
-      <div class="flex flex-col gap-y-10">
-        <RouterLink to="/" class="text-h4 text-black-100">關於我們</RouterLink>
+
+      <div class="flex flex-row flex-wrap mb-20 lg:flex-col gap-y-10">
+        <RouterLink to="/" class="w-1/2 text-h4 text-black-100 lg:w-1/1">關於我們</RouterLink>
         <RouterLink to="/" class="text-h4 text-black-100">商業合作</RouterLink>
-        <RouterLink to="/register" class="text-h4 text-black-100">工作機會</RouterLink>
+        <RouterLink to="/register" class="w-1/2 text-h4 text-black-100 lg:w-1/1"
+          >工作機會</RouterLink
+        >
         <RouterLink to="/searchResult" class="text-h4 text-black-100">常見問題</RouterLink>
-        <RouterLink to="/searchDetail" class="text-h4 text-black-100">意見反饋</RouterLink>
+        <RouterLink to="/searchDetail" class="w-1/2 text-h4 text-black-100 lg:w-1/1"
+          >意見反饋</RouterLink
+        >
         <RouterLink to="/rank" class="text-h4 text-black-100">服務條款</RouterLink>
-        <RouterLink to="/addInvoice" class="text-h4 text-black-100">隱私政策</RouterLink>
+        <RouterLink to="/addInvoice" class="w-1/2 text-h4 text-black-100 lg:w-1/1"
+          >隱私政策</RouterLink
+        >
       </div>
-      <div></div>
-      <div class="flex flex-col text-black-100 text-right gap-y-16">
+
+      <div class="flex flex-col text-center lg:text-right text-black-100 gap-y-6 lg:gap-y-16">
         <div>
-          <p class="font-[Merriweather] font-bold italic text-2xl leading-[1.5]">EMAIL</p>
-          <p class="text-fs4">PriceTalk2025@pricetalk.com</p>
+          <p class="font-[Merriweather] text-xl font-bold italic lg:text-2xl leading-[1.5]">
+            EMAIL
+          </p>
+          <p class="text-fs6 lg:text-fs4">PriceTalk2025@pricetalk.com</p>
         </div>
         <div>
-          <p class="font-[Merriweather] font-bold italic text-2xl leading-[1.5]">PHONE</p>
-          <p class="text-fs4">02-1234-5678</p>
+          <p class="font-[Merriweather] text-xl font-bold italic lg:text-2xl leading-[1.5]">
+            PHONE
+          </p>
+          <p class="text-fs6 lg:text-fs4">02-1234-5678</p>
         </div>
         <div>
-          <p class="font-[Merriweather] font-bold italic text-2xl leading-[1.5]">ADDRESS</p>
-          <p class="text-fs4">100台北市中正區忠孝東路一段123號8樓</p>
+          <p class="font-[Merriweather] text-xl font-bold italic lg:text-2xl leading-[1.5]">
+            ADDRESS
+          </p>
+          <p class="text-fs6 lg:text-fs4">100台北市中正區忠孝東路一段123號8樓</p>
         </div>
       </div>
     </div>
-    <div class="m-auto max-w-7xl flex mb-23 justify-between">
-      <div class="flex flex-col">
-        <p class="text-h4 text-black-100 mb-6">點擊訂閱 PriceTalk 電子報，掌握每周比價情報</p>
+
+    <div
+      class="flex flex-col items-center mb-6 lg:flex-row lg:justify-between lg:m-auto lg:max-w-7xl lg:mb-15"
+    >
+      <div class="flex flex-col mb-6">
+        <p class="mb-6 text-h4 text-black-100">點擊訂閱 PriceTalk 電子報，掌握每週比價情報</p>
         <div class="flex">
           <input
             type="checkbox"
             name="agreePaper"
             id="agreePaper"
-            class="me-4 border-2 border-black-50 w-6"
+            class="w-6 border-2 me-4 border-black-50"
           />
           <p class="text-fs6 text-black-50">
             同意 PriceTalk
@@ -83,12 +220,12 @@ AOS.init()
         </div>
       </div>
       <div class="flex">
-        <input type="email" placeholder="123@hotmail.com" class="border-1 border-black-20 p-6" />
-        <button type="submit" class="bg-primary text-white-100 text-h6 px-8 py-3">訂閱</button>
+        <input type="email" placeholder="123@hotmail.com" class="p-6 border-1 border-black-20" />
+        <button type="submit" class="px-8 py-3 bg-primary text-white-100 text-h6">訂閱</button>
       </div>
     </div>
 
-    <p class="text-fs6 text-black-50 text-center pb-10">
+    <p class="pb-10 text-center text-fs6 text-black-50">
       © PriceTalk 2025　本網站僅供作品參考，並非真實營運販售
     </p>
   </footer>
