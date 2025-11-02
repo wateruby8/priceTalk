@@ -8,7 +8,7 @@
     <div class="hidden lg:block">
       <swiper
         :slides-per-view="2.1"
-        :space-between="120"
+        :space-between="50"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
       >

@@ -90,6 +90,11 @@
   --text-tiny: 12px;
   --text-tiny--font-weight: 350;
   --text-tiny--line-height: 1.5;
+
+  /* 使用方式 text-merriweather*/
+  --text-merriweather: 24px;
+  --text-merriweather--font-weight: 400;
+  --text-merriweather--line-height: 1.2;
 }
 
 #app {
